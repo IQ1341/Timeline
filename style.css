@@ -1,0 +1,59 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .timeline {
+    position: relative;
+    padding: 40px 0;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #FCA311;
+    top: 0;
+    bottom: 0;
+    left: 7px;
+    margin-left: -1px;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .timeline-content {
+    text-align: left;
+    margin-left: 150px;
+  }
+
+  .timeline-icon {
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #FCA311;
+    transform: translateY(-50%);
+  }
+
+  .timeline-line {
+    position: absolute;
+    width: 15%; /* Mengubah lebar menjadi 50% */
+    height: 3px;
+    background-color: #FCA311;
+
+    top: calc(50% - 1px);
+  }
+
+  .timeline-line::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #FCA311;
+    left: calc(100% - 7.5px);
+    top: calc(50% - 7.5px);
+    transform: rotate(45deg);
+  }
